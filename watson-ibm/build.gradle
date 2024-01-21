@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.lucene/lucene-core
+    implementation 'org.apache.lucene:lucene-core:8.7.0'
+
+    // https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp
+    implementation group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '4.2.0'
+    implementation 'edu.stanford.nlp:stanford-corenlp:4.2.0:models'
+}
